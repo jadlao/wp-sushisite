@@ -1,0 +1,630 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,700");
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', Arial, sans-serif;
+  color: #4a4a4a;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #555151;
+}
+
+.rotate {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.sidebar-brand {
+  position: fixed;
+  z-index: 100;
+  width: 10%;
+  height: 100vh;
+  background: black;
+  padding-top: 50px;
+}
+
+.sidebar-brand .social a {
+  color: white;
+}
+
+.sidebar-brand .social a .fa {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sidebar-brand .brand h1 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.home,
+.about,
+.gallery,
+.menu,
+.contact,
+.reservations {
+  margin-left: 10%;
+  height: 100%;
+  display: block;
+}
+
+.home .left-content {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  position: relative;
+}
+
+.home .left-content h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.home .left-content #btn-book-top {
+  background: #bae2be;
+  padding: 30px 50px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 100px;
+  right: -103px;
+}
+
+.home .left-content nav {
+  margin-bottom: 50px;
+}
+
+.home .left-content nav li {
+  display: inline-block;
+}
+
+.home .left-content nav li a {
+  margin-right: 5px;
+  padding: 5px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.home .left-content nav li a:hover {
+  color: black;
+}
+
+.home .left-content .box-next {
+  background: rgba(238, 238, 238, 0.623);
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 50px;
+}
+
+.home .left-content .box-next a {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  width: 150px;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.home .left-content .box-next a .fa {
+  margin-left: 10px;
+}
+
+.home .right-content {
+  width: 50%;
+  height: 100%;
+  background: url("https://timedotcom.files.wordpress.com/2017/01/sushi-food-fraud.jpeg?quality=85");
+  background-size: cover;
+  float: right;
+}
+
+.about {
+  height: 300px;
+}
+
+.about .left-content {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
+.about .left-content h2 {
+  margin-bottom: 20px;
+}
+
+.about .right-content {
+  float: right;
+  width: 50%;
+  padding: 50px;
+}
+
+.gallery {
+  background: #eee;
+  height: 700px;
+}
+
+.gallery .left-img {
+  width: 70%;
+  height: 100%;
+  float: left;
+  background: url("https://www.bulletproofexec.com/wp-content/uploads/2014/12/Sushi4.jpg");
+  background-size: cover;
+}
+
+.gallery .gallery-carousel {
+  width: 30%;
+  float: right;
+}
+
+.gallery .gallery-carousel .circle {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e7ed;
+  border-radius: 50%;
+}
+
+.gallery .gallery-carousel p {
+  text-align: center;
+}
+
+.menu {
+  padding-top: 50px;
+  height: 600px;
+  text-align: center;
+}
+
+.menu h3 {
+  margin-bottom: 20px;
+}
+
+.menu h4 {
+  margin: 20px 0 10px 0;
+}
+
+.menu button {
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #eee;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu button:hover {
+  opacity: 1;
+}
+
+.menu .left-menu {
+  width: 50%;
+  float: left;
+  padding: 50px;
+}
+
+.menu .right-menu {
+  width: 50%;
+  float: right;
+  padding: 50px;
+}
+
+.contact {
+  background: #bae2be;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contact h3 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  line-height: 1.7;
+}
+
+.contact .fa {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact .location {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
+.contact .hours {
+  float: right;
+  width: 50%;
+  padding: 50px;
+}
+
+.reservations {
+  padding: 50px;
+  text-align: center;
+}
+
+.reservations input {
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.reservations button {
+  background: #eee;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 401px;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar-brand {
+    height: 100px;
+    width: 100vw;
+    margin-top: -100px;
+  }
+
+  .sidebar-brand .social {
+    margin-right: 50px;
+  }
+
+  .sidebar-brand .social .fa {
+    display: inline-block !important;
+    float: right;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .sidebar-brand .brand {
+    float: left;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top: -230px;
+    margin-left: 250px;
+  }
+
+  .home,
+  .about,
+  .gallery,
+  .menu,
+  .contact,
+  .reservations {
+    margin-left: 0%;
+  }
+
+  .home {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .home {
+    height: 87%;
+  }
+
+  .home .left-content {
+    width: 100%;
+  }
+
+  .home .left-content .box-next {
+    width: 50%;
+    text-align: center;
+  }
+
+  .home .left-content #btn-book-top {
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    padding: 40px 50px;
+    text-align: center;
+  }
+
+  .home .right-content {
+    display: none;
+  }
+
+  .about {
+    height: 400px;
+  }
+
+  .menu {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .sidebar-brand .brand {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+  }
+
+  .sidebar-brand .brand h1 {
+    margin-top: 430px;
+  }
+
+  .sidebar-brand .social a .fa {
+    font-size: 1.5rem;
+    margin-top: -10px;
+  }
+
+  .about {
+    height: 70%;
+    display: block;
+  }
+
+  .about .left-content {
+    width: 100%;
+  }
+
+  .about .right-content {
+    width: 100%;
+  }
+
+  .gallery {
+    height: 100%;
+  }
+
+  .gallery .left-img {
+    display: none;
+  }
+
+  .gallery .gallery-carousel {
+    width: 100%;
+  }
+
+  .menu {
+    height: 140%;
+  }
+
+  .menu .left-menu {
+    width: 100%;
+  }
+
+  .menu .right-menu {
+    width: 100%;
+  }
+
+  .contact {
+    height: 100%;
+  }
+
+  .contact .location {
+    width: 100%;
+  }
+
+  .contact .hours {
+    width: 100%;
+  }
+
+  .reservations {
+    height: 70%;
+  }
+
+  .reservations input,
+  .reservations button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .sidebar-brand .brand {
+    position: absolute;
+    top: 85px;
+    left: -20px;
+  }
+
+  .sidebar-brand .brand h1 {
+    margin-top: 360px;
+    margin-left: 0px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .home .left-content .box-next {
+    padding: 35px 0px;
+  }
+
+  .reservations input {
+    font-size: 0.9rem;
+  }
+}
