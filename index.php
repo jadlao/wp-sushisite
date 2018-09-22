@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Sushi</title>
+  <title>SushiEats - Original Cuisine Omakase Dining</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
@@ -22,7 +22,7 @@
         </a>
       </div>
       <div class="brand">
-        <h1 class="rotate">SushiSite</h1>
+       
       </div>
     </div>
     <section class="home">
@@ -30,27 +30,26 @@
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li>
-              <a href="#">Menu</a>
+              <a href="#menu">Menu</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
-        <h2>HEADING GOES HERE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna
-          aliqua.
+        <h2><span>FRESH</span><br><br>and tasty sushi</h2>
+        <br>
+        <p>The best of Sydney and Japanese cuisine combined.
         </p>
-        <a href="#" id="btn-book-top">Book Now</a>
+        <a href="#book" id="btn-book-top">Book Now</a>
         <div class="box-next">
-          <a href="#">See our menu
+          <a href="#menu">See our menu
             <i class="fa fa-arrow-down" aria-hidden="true"></i>
           </a>
         </div>
@@ -58,24 +57,23 @@
       <div class="right-content">
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="left-content">
-        <h2>HEADING GOES HERE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+        <h3>Our original cuisine</h3>
+        <?php 
+          $mypod = pods('about');
+          $mypod->find('name ASC');
+          $content = $mypod->field('content');
+          $content2 = $mypod->field('about2');
+        ?>
+        <p><?php echo $content ?></p>
       </div>
       <div class="right-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+        <p><?php echo $content2 ?></p>
+        <img src="https://image.ibb.co/e14dpe/sushi_icon_60905.png">
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="left-img">
       </div>
       <div class="gallery-carousel">
@@ -87,33 +85,66 @@
         <p>Ramen noodles</p>
       </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
       <h2>Menu</h2>
+
+      <?php 
+        $mypod = pods('dish');
+        $mypod->find('name ASC');
+      ?>
+
       <div class="left-menu">
         <h3>Sushi</h3>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-      </div>
+
+        <?php while ( $mypod->fetch() ) : ?>
+
+        <?php
+          $name = $mypod->field('name');
+          $price = $mypod->field('price');
+          $description = $mypod->field('description');
+          $category = $mypod->field('category');
+        ?>
+
+        <?php if ( $category == 'sushi' ) : ?>
+
+        <h4><?php echo $name ?><span>$<?php echo $price ?></span></h4>
+        <p><?php echo $description ?></p>
+
+        <?php endif; ?>
+
+        <?php endwhile; ?>
+      </div>     
+
       <div class="right-menu">
-        <h3>A La Carte</h3>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
-        <h4>Sashimi</h4>
-        <p>5 Salmon sashimi, wasabi, soy sauce</p>
+        <h3>Bento</h3>
+
+        <?php 
+        $mypod = pods('dish');
+        $mypod->find('name ASC');
+        ?>
+
+        <?php while ( $mypod->fetch() ) : ?>
+
+        <?php
+          $name = $mypod->field('name');
+          $price = $mypod->field('price');
+          $description = $mypod->field('description');
+          $category = $mypod->field('category');
+        ?>
+
+        <?php if ( $category == 'bento' ) : ?>
+
+        <h4><?php echo $name ?><span>$<?php echo $price ?></span></h4>
+        <p><?php echo $description ?></p>
+
+        <?php endif; ?>
+
+        <?php endwhile; ?>
+
       </div>
       <button>Download Menu</button>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact</h2>
       <div class="location">
         <i class="fa fa-location-arrow" aria-hidden="true"></i>
@@ -133,18 +164,11 @@
         <p>Sunday: 9am - 11pm</p>
       </div>
     </section>
-    <section class="reservations">
+    <section class="reservations" id="book">
       <h2>Book Now</h2>
-      <form>
-        <input type="text" placeholder="How many people is this booking for?" />
-        <br>
-        <input type="text" placeholder="When would you like to dine?" />
-        <br>
-        <br>Calendar goes here
-        <br>
-        <br>
-        <button>Book</button>
-      </form>
+
+      <?php echo do_shortcode('[booking]') ?>
+
     </section>
   </div>
 </body>
