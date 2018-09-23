@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </a>
       </div>
       <div class="brand">
-       
+        <img src="https://image.ibb.co/mbNE49/Sushi_Eats.png">
       </div>
     </div>
     <section class="home">
@@ -75,8 +76,10 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="left-img">
+        <?php echo do_shortcode('[metaslider id="32"]'); ?>
       </div>
       <div class="gallery-carousel">
+        <h3>Chef's Specials</h3>
         <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-1 circle">
         <p>Ramen noodles</p>
         <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-2 circle">
@@ -167,10 +170,11 @@
     <section class="reservations" id="book">
       <h2>Book Now</h2>
 
-      <?php echo do_shortcode('[booking]') ?>
+      <?php echo do_shortcode('[booking]'); ?>
 
     </section>
   </div>
+
 </body>
 
 </html>
