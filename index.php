@@ -75,17 +75,14 @@
       </div>
     </section>
     <section class="gallery" id="gallery">
-      <div class="left-img">
+      <div class="gallery-carousel">
         <?php echo do_shortcode('[metaslider id="32"]'); ?>
       </div>
-      <div class="gallery-carousel">
+      <div class="chefs-special">
         <h3>Chef's Specials</h3>
         <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-1 circle">
-        <p>Ramen noodles</p>
         <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-2 circle">
-        <p>Ramen noodles</p>
         <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-3 circle">
-        <p>Ramen noodles</p>
       </div>
     </section>
     <section class="menu" id="menu">
