@@ -1,14 +1,4 @@
-<html>
-
-<head>
-  <title>SushiEats - Original Cuisine Omakase Dining</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-</head>
-
-<body>
+<?php get_header(); ?>
   <div>
     <div class="sidebar-brand">
       <div class="social">
@@ -76,7 +66,7 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="gallery-carousel">
-        <?php echo do_shortcode('[metaslider id="32"]'); ?>
+        <?php echo do_shortcode('[carousel_slide id="49"]'); ?>
       </div>
       <div class="chefs-special">
         <h3>Chef's Specials</h3>
@@ -167,11 +157,8 @@
     <section class="reservations" id="book">
       <h2>Book Now</h2>
 
-      <?php echo do_shortcode('[booking]'); ?>
+      <?php echo do_shortcode("[booking type=1]"); ?>
 
     </section>
   </div>
-
-</body>
-
-</html>
+<?php get_footer(); ?>

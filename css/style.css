@@ -315,7 +315,7 @@ a {
 .home .right-content {
   width: 50%;
   height: 100%;
-  background: url('https://timedotcom.files.wordpress.com/2017/01/sushi-food-fraud.jpeg?quality=85');
+  background: url('https://image.ibb.co/cMuACU/rawpixel_788529_unsplash.jpg');
   background-size: cover;
   float: right;
 }
@@ -471,7 +471,7 @@ a {
 .reservations {
   padding: 50px;
   text-align: center;
-  height: 600px;
+  height: 700px;
 }
 
 .reservations input {
@@ -511,8 +511,24 @@ a {
   background: #bf9249 !important;
 }
 
-.form-group .control-label {
-  margin: 20px 0 !important;
+.reservations input {
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+.reservations label {
+  margin: 10px 0;
+}
+
+.reservations select {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -591,7 +607,7 @@ a {
   }
 
   .reservations {
-    height: 600px;
+    height: 700px;
   }
 }
 
@@ -655,7 +671,7 @@ a {
   }
 
   .reservations {
-    height: 600px;
+    height: 700px;
   }
 
   .reservations input,
@@ -674,7 +690,7 @@ a {
   }
 
   .reservations {
-    height: 600px;
+    height: 700px;
   }
 
   .reservations input {
