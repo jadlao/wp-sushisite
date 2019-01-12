@@ -66,7 +66,7 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="gallery-carousel">
-        <?php echo do_shortcode('[carousel_slide id="49"]'); ?>
+      <?php super_hero_slider(27); ?>
       </div>
       <div class="chefs-special">
         <h3>Chef's Specials</h3>

@@ -492,11 +492,11 @@ a {
 }
 
 #calendar_booking1 {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .wpbc_structure_calendar:nth-child(1) {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .btn {
