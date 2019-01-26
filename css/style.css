@@ -431,6 +431,7 @@ a {
 .menu button:hover {
   color: #9d331f;
   border-bottom: 2px solid #9d331f;
+  cursor: pointer;
 }
 
 .menu button .fa {
@@ -498,34 +499,27 @@ a {
   width: 264px !important;
 }
 
-.reservations button {
-  background: #eee;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  width: 401px;
-  cursor: pointer;
-  border: none;
-}
-
+/* calendar */
 .datepick-inline {
-  margin-top: 50px;
-  display: block;
-  margin: 0 auto;
+  font-weight: 300 !important;
 }
 
+/* booking form */
 .wpbc_structure_form {
-  margin-top: 80px;
+  font-weight: 300 !important;
 }
 
+/* submit button */
 .btn {
   font-family: 'Fira Sans', Arial, sans-serif !important;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: 1.2rem;
   letter-spacing: 1px;
   background: #9d331f !important;
-  color: white;
-  margin-top: 20px;
+  color: white !important;
+  border-radius: 0 !important;
+  border-color: #9d331f !important;
+  margin-top: 20px !important;
   margin-bottom: 50px !important;
   width: 282px !important;
   transition: all 0.3s ease-in-out;
@@ -533,6 +527,7 @@ a {
 
 .btn:hover {
   background: #bf9249 !important;
+  border-color: #bf9249 !important;
 }
 
 .reservations input {
@@ -542,6 +537,12 @@ a {
 
 .reservations label {
   margin: 10px 0;
+  font-family: 'Fira Sans', Arial, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.reservations input {
+  border-radius: 0 !important;
 }
 
 .reservations select {
@@ -553,6 +554,7 @@ a {
   margin: 10px 0;
   border-radius: 0;
   cursor: pointer;
+  border-radius: 0 !important;
 }
 
 /* MEDIA QUERIES */
