@@ -34,14 +34,14 @@
             </li>
           </ul>
         </nav>
-        <h2><span>FRESH</span><br><br>and tasty sushi</h2>
+        <h2><span>FRESH</span><br><br>+ tasty sushi</h2>
         <br>
         <p>The best of Sydney and Japanese cuisine combined.
         </p>
         <a href="#book" id="btn-book-top">Book Now</a>
         <div class="box-next">
           <a href="#menu">See our menu
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -61,7 +61,6 @@
       </div>
       <div class="right-content">
         <p><?php echo $content2 ?></p>
-        <img src="https://image.ibb.co/e14dpe/sushi_icon_60905.png">
       </div>
     </section>
     <section class="gallery" id="gallery">
@@ -70,9 +69,9 @@
       </div>
       <div class="chefs-special">
         <h3>Chef's Specials</h3>
-        <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-1 circle">
-        <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-2 circle">
-        <img src="http://yestoyolks.com/wp-content/uploads/2014/08/IMG_2713.jpg" class="img-3 circle">
+        <img src="https://i.ibb.co/y0xcKjH/chefsspecials.png" class="img-1 circle">
+        <img src="https://i.ibb.co/vwNj1hc/chefsspecials02.png" class="img-2 circle">
+        <img src="https://i.ibb.co/g7qBSgC/chefsspecials03.png" class="img-3 circle">
       </div>
     </section>
     <section class="menu" id="menu">
@@ -132,7 +131,7 @@
         <?php endwhile; ?>
 
       </div>
-      <button>Download Menu</button>
+      <button>Download Menu <i class="fa fa-download" aria-hidden="true"></i></button>
     </section>
     <section class="contact" id="contact">
       <h2>Contact</h2>
