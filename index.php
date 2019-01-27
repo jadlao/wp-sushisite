@@ -69,9 +69,15 @@
       </div>
       <div class="chefs-special">
         <h3>Chef's Specials</h3>
+        <div class="col">
         <img src="https://i.ibb.co/y0xcKjH/chefsspecials.png" class="img-1 circle">
+        </div>
+        <div class="col">
         <img src="https://i.ibb.co/vwNj1hc/chefsspecials02.png" class="img-2 circle">
+        </div>
+        <div class="col">
         <img src="https://i.ibb.co/g7qBSgC/chefsspecials03.png" class="img-3 circle">
+        </div>
       </div>
     </section>
     <section class="menu" id="menu">
