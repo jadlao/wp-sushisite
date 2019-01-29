@@ -778,3 +778,97 @@ a {
     font-size: 0.9rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .brand img {
+    height: 50px !important;
+    margin-top: -25px !important;
+    margin-left: 30px !important;
+  }
+
+  .home,
+  .about,
+  .gallery,
+  .menu,
+  .contact,
+  .reservations {
+    padding: 10px !important;
+  }
+
+  .home {
+    padding: 0 !important;
+  }
+
+  .home .left-content {
+    padding: 20px !important;
+  }
+
+  .home .left-content .box-next {
+    padding: 35px 0px;
+  }
+
+  .home .box-next .fa {
+    display: none;
+  }
+  
+  .home #btn-book-top {
+    padding: 40px 15px !important;
+  }
+
+  .about {
+    height: 520px;
+  }
+
+  .about .left-content {
+    padding: 20px;
+  }
+
+  .about .right-content {
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .gallery h3 {
+    margin-top: 10px !important;
+  }
+
+  .gallery .circle {
+    margin: 40px auto !important;
+  }
+
+  .menu {
+    height: 950px;
+  }
+
+  .menu h2 {
+    margin-top: 10px;
+  }
+
+  .menu .left-menu {
+    padding: 50px 20px 50px 20px !important;
+  }
+
+  .menu .right-menu {
+    padding: 10px 20px 50px 20px !important;
+  }
+
+  .contact h2 {
+    margin-top: 10px !important;
+  }
+
+  .contact .location, .contact .hours {
+    padding: 20px;
+  }
+
+  .reservations {
+    height: 700px;
+  }
+
+  .reservations h2 {
+    margin-top: 10px;
+  }
+
+  .reservations input {
+    font-size: 0.9rem;
+  }
+}
